@@ -29,5 +29,8 @@ class Home extends BaseController
         return view('employee_register');
     }
 
-    
+    public function user_login()
+    {
+        return view('login_page');
+    }
 }

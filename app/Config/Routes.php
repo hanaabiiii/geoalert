@@ -34,6 +34,7 @@ $routes->get('/open', 'Home::open');
 $routes->get('/main', 'Home::home');
 $routes->get('/admin-register', 'Home::admin_register');
 $routes->get('/employee-register', 'Home::employee_register');
+$routes->get('/login', 'Home::user_login');
 
 /*
  * --------------------------------------------------------------------
