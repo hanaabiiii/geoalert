@@ -82,14 +82,19 @@
     </style>
 
 </head>
+
 <body>
       <div class="sidebar">
         <img src="assets/img/logo.png" height="187" alt="GeoAlert" class="center">
-        <a class="active fa fa-user-o" href="#home"> My Profile</a>   
-        <a class="#incident fa fa-book"> Incident Reports</a>
+        <a class="active fa fa-user-o" href="#home">
+  <span class="text-black me-3 mb-0"><?php echo isset($user['username']) ? $user['username'] : ''; ?></span>
+</a>  
+        <a class="#incident fa fa-book" href="http://localhost/geoalert/public/map"  > Incident Reports</a>
         <a class="#events fa fa-calendar-o"> Events</a>
         <a class="#traffic fa fa-car"> Traffic Flow</a>
-        <a class="#logout fa fa-sign-out logoutstyle"> Logout</a>
+        
+       
+        <a class="#logout fa fa-sign-out logoutstyle" href="http://localhost/geoalert/public/logout"> Logout</a>
       </div>
 
       <div class="content">

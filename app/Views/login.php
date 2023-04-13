@@ -181,34 +181,32 @@
 
 <body>
 
-<a href="<?= site_url('main') ?>">
-    <img src="assets/img/1.svg" class="img-fluid image btn" alt="Responsive image">
-</a>
+    <img src="assets/img/1.svg" class="img-fluid image" alt="Responsive image">
 
     <div class="rectangle">
         <div class= "text-center">
-        <p class="p1">Create an Account</p>
+        <p class="p1">Log into Geo Alert</p>
         </div>
         <div class='text-center'>
-            <label class="f1">If you have already an account ?</label>
-            <a class="f2" href="<?= site_url('login') ?>">Login Now</a>
+            <label class="f1">Dont have Account? Sign up now</label>
+            <a class="f2" href="<?= site_url('main') ?>">Create Account</a>
         </div>
 
-        <form method="post" action="http://localhost/geoalert/public/process/register2">
+        <form method="post" action="http://localhost/geoalert/public/process/login">
             <?= csrf_field(); ?>
-      
+       
 
         <div class="form-group">
             <label for="uname" class="label2">Username</label>
-            <input type="text" class="form-control form2 fa fa-user" id="uname" name="empname" placeholder="&#xf007; Username">
+            <input type="text" class="form-control form2 fa fa-user" id="uname" name="uname" placeholder="&#xf007; Username">
         </div>
 
         <div class="form-group">
             <label for="pass" class="label3">Password</label>
-            <input type="text" class="form-control form3 fa fa-key" id="pass" name="epass" placeholder="&#xf084; Password">
+            <input type="password" class="form-control form3 fa fa-key" id="pass" name="pass" placeholder="&#xf084; Password">
         </div>
         
-        <button class="btn btn-lg btndsgn" type="submit" name="login">CREATE ACCOUNT</button>
+        <button class="btn btn-lg btndsgn" type="submit" name="login">Log in</button>
     </div>
     </form>
 

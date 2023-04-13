@@ -32,8 +32,14 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/open', 'Home::open');
 $routes->get('/main', 'Home::home');
-$routes->get('/admin-register', 'Home::admin_register');
-$routes->get('/employee-register', 'Home::employee_register');
+$routes->get('/admin_register', 'Home::admin_register');
+$routes->get('/login', 'Home::login');
+$routes->get('/employee_register', 'Home::employee_register');
+$routes->post('/process/(:any)', 'Home::process/$1');
+$routes->get('/logout', 'Home::logout');
+$routes->get('/map', 'Home::map');
+
+
 
 /*
  * --------------------------------------------------------------------

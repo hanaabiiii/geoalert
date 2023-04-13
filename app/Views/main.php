@@ -93,12 +93,12 @@
         />
     <div class="rectangle">
     <div class="adminname">
-        <a href="http://localhost/geoalert/public/admin-register" class="fa fa-user-o">ADMIN
+        <a href="http://localhost/geoalert/public/admin_register" class="fa fa-user-o">ADMIN
         </a>
         
     </div>
     <div class="user">
-        <a href="http://localhost/geoalert/public/employee-register" class="fa fa-user-o">USER
+        <a href="http://localhost/geoalert/public/employee_register" class="fa fa-user-o">USER
         </a>
         
     </div>

@@ -172,7 +172,7 @@
         color: white !important;
         font-size: 18px;
         font-family: 'Poppins';
-        font-style: ;
+       
         font-weight: 700;
         transition: none !important;
         }
@@ -181,7 +181,10 @@
 
 <body>
 
-    <img src="assets/img/1.svg" class="img-fluid image" alt="Responsive image">
+<a href="<?= site_url('main') ?>">
+    <img src="assets/img/1.svg" class="img-fluid image btn" alt="Responsive image">
+</a>
+
 
     <div class="rectangle">
         <div class= "text-center">
@@ -192,24 +195,23 @@
             <a class="f2" href="<?= site_url('login') ?>">Login Now</a>
         </div>
 
-        <form>
-        <div class="form-group">
-            <label for="AdminID" class="label1">Admin ID</label>
-            <input type="text" class="form-control form1 fa fa-user fa-sharp" id="AdminID" placeholder="&#xf007; Admin ID">
-        </div>
+        <form method="post" action="http://localhost/geoalert/public/process/register">
+            <?= csrf_field(); ?>
+      
 
         <div class="form-group">
             <label for="uname" class="label2">Username</label>
-            <input type="text" class="form-control form2 fa fa-user" id="uname" placeholder="&#xf007; Username">
+            <input type="text" class="form-control form2 fa fa-user" id="uname" name="uname" placeholder="&#xf007; Username">
         </div>
 
         <div class="form-group">
             <label for="pass" class="label3">Password</label>
-            <input type="text" class="form-control form3 fa fa-key" id="pass" placeholder="&#xf084; Password">
+            <input type="text" class="form-control form3 fa fa-key" id="pass" name="pass" placeholder="&#xf084; Password">
         </div>
         
         <button class="btn btn-lg btndsgn" type="submit" name="login">CREATE ACCOUNT</button>
     </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
