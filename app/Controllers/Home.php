@@ -76,6 +76,7 @@ class Home extends BaseController
             ];
     
             $builder->insert($data);
+            return redirect()->to('login');
         }
         else if($mode == 'register2'){
             $username = $this->request->getPost('empname');

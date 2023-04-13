@@ -181,7 +181,7 @@
 
 <body>
 
-<a href="<?= site_url('main') ?>">
+<a href="http://localhost/geoalert/public/main">
     <img src="assets/img/1.svg" class="img-fluid image btn" alt="Responsive image">
 </a>
 
