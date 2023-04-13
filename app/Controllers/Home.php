@@ -117,5 +117,8 @@ class Home extends BaseController
         }
     }
 
-    
+    public function user_login()
+    {
+        return view('login_page');
+    }
 }

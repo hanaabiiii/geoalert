@@ -40,6 +40,9 @@ $routes->get('/logout', 'Home::logout');
 $routes->get('/map', 'Home::map');
 
 
+$routes->get('/admin-register', 'Home::admin_register');
+$routes->get('/employee-register', 'Home::employee_register');
+$routes->get('/login', 'Home::user_login');
 
 /*
  * --------------------------------------------------------------------
